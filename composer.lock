@@ -4,6 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "69649fb31b36fe7c6d4383ef1c8693d2",
     "packages": [
         {
@@ -84,6 +85,11 @@
             "time": "2024-04-25T13:16:04+00:00"
         },
         {
+=======
+    "content-hash": "bfe12996eeecb6fdc8713a9fd9d431f8",
+    "packages": [
+        {
+>>>>>>> e063689660093de7d665c359bd47efca5e540f04
             "name": "brick/math",
             "version": "0.11.0",
             "source": {
@@ -208,6 +214,7 @@
             "time": "2023-12-11T17:09:12+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "composer/semver",
             "version": "3.4.0",
             "source": {
@@ -289,6 +296,8 @@
             "time": "2023-08-31T09:50:34+00:00"
         },
         {
+=======
+>>>>>>> e063689660093de7d665c359bd47efca5e540f04
             "name": "dflydev/dot-access-data",
             "version": "v3.0.2",
             "source": {
@@ -532,6 +541,7 @@
             "time": "2024-02-05T11:56:58+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "dompdf/dompdf",
             "version": "v2.0.8",
             "source": {
@@ -594,6 +604,8 @@
             "time": "2024-04-29T13:06:17+00:00"
         },
         {
+=======
+>>>>>>> e063689660093de7d665c359bd47efca5e540f04
             "name": "dragonmantank/cron-expression",
             "version": "v3.3.3",
             "source": {
@@ -722,6 +734,7 @@
             "time": "2023-10-06T06:47:41+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "ezyang/htmlpurifier",
             "version": "v4.17.0",
             "source": {
@@ -783,6 +796,8 @@
             "time": "2023-11-17T15:01:25+00:00"
         },
         {
+=======
+>>>>>>> e063689660093de7d665c359bd47efca5e540f04
             "name": "fruitcake/php-cors",
             "version": "v1.3.0",
             "source": {
@@ -2176,6 +2191,7 @@
             "time": "2024-01-28T23:22:08+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "maatwebsite/excel",
             "version": "3.1.55",
             "source": {
@@ -2512,6 +2528,8 @@
             "time": "2024-03-31T07:05:07+00:00"
         },
         {
+=======
+>>>>>>> e063689660093de7d665c359bd47efca5e540f04
             "name": "monolog/monolog",
             "version": "3.5.0",
             "source": {
@@ -3012,6 +3030,7 @@
             "time": "2023-02-08T01:06:31+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "phenx/php-font-lib",
             "version": "0.5.6",
             "source": {
@@ -3207,6 +3226,8 @@
             "time": "2023-06-14T22:48:31+00:00"
         },
         {
+=======
+>>>>>>> e063689660093de7d665c359bd47efca5e540f04
             "name": "phpoption/phpoption",
             "version": "1.9.2",
             "source": {
@@ -3998,6 +4019,7 @@
             "time": "2023-11-08T05:53:05+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "sabberworm/php-css-parser",
             "version": "v8.6.0",
             "source": {
@@ -4063,6 +4085,8 @@
             "time": "2024-07-01T07:33:21+00:00"
         },
         {
+=======
+>>>>>>> e063689660093de7d665c359bd47efca5e540f04
             "name": "symfony/console",
             "version": "v6.4.4",
             "source": {

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+<<<<<<< HEAD
 use App\Mail\ResetPasswordMail;
 use App\Models\PasswordResetToken;
 use App\Models\Prodi;
@@ -16,6 +17,13 @@ use Illuminate\Auth\Events\Registered;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
+=======
+use App\Models\User;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+
+
+>>>>>>> e063689660093de7d665c359bd47efca5e540f04
 
 class SesiController extends Controller
 {
@@ -23,6 +31,7 @@ class SesiController extends Controller
     {
         return view('login');
     }
+<<<<<<< HEAD
     Function forgot()
     {
         return view('forgotpassword');
@@ -109,10 +118,13 @@ class SesiController extends Controller
     {
         return view('landingpage');
     }
+=======
+>>>>>>> e063689660093de7d665c359bd47efca5e540f04
     Function register()
     {
         return view('register');
     }
+<<<<<<< HEAD
     Function nextregister()
     {
         return view('nextregister');
@@ -226,6 +238,8 @@ class SesiController extends Controller
 
         return redirect('login')->withErrors('Akun berhasi di buat')->withInput();
     }
+=======
+>>>>>>> e063689660093de7d665c359bd47efca5e540f04
    
     function login(Request $request)
     {
@@ -244,6 +258,7 @@ class SesiController extends Controller
         ];
         if(Auth::attempt($infologin)){
             if(Auth::user()->role == 'admin'){
+<<<<<<< HEAD
                 return redirect('/dashboard-admins');
             }
             elseif(Auth::user()->role == 'kaprodi'){
@@ -257,6 +272,21 @@ class SesiController extends Controller
             }
         }else{
             return redirect('/login')->withErrors('Useremail dan Password yang dimasukkan tidak sesuai')->withInput();
+=======
+                return redirect('/admin');
+            }
+            elseif(Auth::user()->role == 'kaprodi'){
+                return redirect('/kaprodi');
+            }
+            elseif(Auth::user()->role == 'dosen'){
+                return redirect('/dosen');
+            }
+            elseif(Auth::user()->role == 'mahasiswa'){
+                return redirect('/mahasiswa');
+            }
+        }else{
+            return redirect('')->withErrors('Useremail dan Password yang dimasukkan tidak sesuai')->withInput();
+>>>>>>> e063689660093de7d665c359bd47efca5e540f04
         }
     }
     Function logout()
@@ -273,7 +303,10 @@ class SesiController extends Controller
         ]);
         $data['name']        = $req->name;
         $data['email']       = $req->email;
+<<<<<<< HEAD
         $data['role']       = $req->role;
+=======
+>>>>>>> e063689660093de7d665c359bd47efca5e540f04
         $data['password']    = Hash::make($req->password); 
         
         User::create($data);
@@ -285,7 +318,11 @@ class SesiController extends Controller
         ];
         if(Auth::attempt($register)){
             if(Auth::user()->role == 'admin'){
+<<<<<<< HEAD
                 return redirect('/tadmin');
+=======
+                return redirect('/admin');
+>>>>>>> e063689660093de7d665c359bd47efca5e540f04
             }
             elseif(Auth::user()->role == 'kaprodi'){
                 return redirect('/kaprodi');

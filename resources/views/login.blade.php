@@ -161,9 +161,13 @@ button{
         <input type="password" placeholder="Password" id="password" name="password">
 
         <button>Log In</button>
+<<<<<<< HEAD
        <a href="{{ route('nextregister') }}" class="text-center">register</a>
        <a href="{{ route('forgot_password') }}" class="text-center">Forgot Password</a>
        <a href="/" class="text-center">Home</a>
+=======
+       <a href="{{ route('register') }}" class="text-center">register</a>
+>>>>>>> e063689660093de7d665c359bd47efca5e540f04
        
         
     </form>

@@ -18,12 +18,18 @@ return new class extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->enum('role',['mahasiswa','dosen','admin','kaprodi']);
+<<<<<<< HEAD
             $table->string('nim')->unique();
             $table->string('nidn')->unique();
             $table->rememberToken();
             $table->timestamps();
         });
         
+=======
+            $table->rememberToken();
+            $table->timestamps();
+        });
+>>>>>>> e063689660093de7d665c359bd47efca5e540f04
     }
 
     /**

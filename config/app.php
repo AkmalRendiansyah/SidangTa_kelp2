@@ -181,8 +181,11 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+<<<<<<< HEAD
         Maatwebsite\Excel\ExcelServiceProvider::class,
      
+=======
+>>>>>>> e063689660093de7d665c359bd47efca5e540f04
 
         /*
          * Package Service Providers...
@@ -212,9 +215,12 @@ return [
 
     'aliases' => Facade::defaultAliases()->merge([
         // 'ExampleClass' => App\Example\ExampleClass::class,
+<<<<<<< HEAD
         'Excel' => Maatwebsite\Excel\Facades\Excel::class,
      
         
+=======
+>>>>>>> e063689660093de7d665c359bd47efca5e540f04
     ])->toArray(),
 
 ];

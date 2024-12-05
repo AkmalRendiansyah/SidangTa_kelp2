@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 use App\Http\Controllers\AnggotaSidangController;
 
 use App\Http\Controllers\Auth\ForgotPasswordController;
@@ -58,6 +59,10 @@ use App\Http\Controllers\ValidasiProposalPembimbing2Controller;
 use App\Http\Controllers\ValidasiSidangTaKaprodiController;
 use App\Models\nilaipembimbing2;
 use Illuminate\Foundation\Auth\EmailVerificationRequest;
+=======
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\SesiController;
+>>>>>>> e063689660093de7d665c359bd47efca5e540f04
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -71,6 +76,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::middleware(['guest'])->group(function(){
+<<<<<<< HEAD
     Route::get('/', [SesiController::class,'landing'] );
 Route::get('/login', [SesiController::class,'index'] )->name('login');
 Route::post('/login', [SesiController::class,'login'] );
@@ -279,5 +285,20 @@ Route::resource('/status-sidang-mahasiswa',StatusSidangTaMahasiswaController::cl
 Route::resource('/nilai-ta-mahasiswa',NilaiSidangTaMahasiswaController::class)->middleware('userAkses:mahasiswa');
 
 // Route::get('/dashboard',[DashboardController::class,'dashboard']);
+=======
+Route::get('/', [SesiController::class,'index'] )->name('login');
+Route::post('/', [SesiController::class,'login'] );
+Route::get('/register', [SesiController::class,'register'] )->name('register');
+Route::post('/register-proses', [SesiController::class,'register_proses'] )->name('register_proses');
+});
+Route::get('/home',function(){
+ return redirect('/admin');
+});
+Route::middleware(['auth'])->group(function(){
+Route::get('/admin',[AdminController::class,'admin'])->middleware('userAkses:admin');
+Route::get('/kaprodi',[AdminController::class,'kaprodi'])->middleware('userAkses:kaprodi');
+Route::get('/dosen',[AdminController::class,'dosen'])->middleware('userAkses:dosen');
+Route::get('/mahasiswa',[AdminController::class,'mahasiswa'])->middleware('userAkses:mahasiswa');
+>>>>>>> e063689660093de7d665c359bd47efca5e540f04
 Route::get('/logout',[SesiController::class,'logout']);
 });

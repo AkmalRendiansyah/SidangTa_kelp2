@@ -9,7 +9,11 @@ class AdminController extends Controller
 {
     function admin()
     {
+<<<<<<< HEAD
     
+=======
+        return redirect('/dosen');
+>>>>>>> e063689660093de7d665c359bd47efca5e540f04
         echo "<h5>". Auth :: user()->name ."</h5>" ;
         echo "selamat datang admin";
         echo "<a href='/logout'>logout >></a>";
